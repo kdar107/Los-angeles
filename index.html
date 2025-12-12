@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="imagenes/logo_oficial.png" width="100" height="100" alt="Logo Centro Universitario Los Angeles">
+    </div>
+    <nav class="nav">
+        <ul id="main-menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#carreras">Carreras</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="menuToggle" class="menu-btn">☰</button>
+    </nav>
+</header>
+
+<section id="inicio" class="slider-container">
+    <div class="slider" id="slider">
+
+        <div class="slide" style="background-image: url('imagenes/banner_principal_fachada.jpg');">
+            <h1>Bienvenido a la Universidad</h1>
+            <p>Excelencia académica y formación integral.</p>
+        </div>
+
+        <div class="slide" style="background-image: url('imagenes/banner_edificios.jpg');">
+            <h1>Formamos Profesionales</h1>
+            <p>Educación de calidad para tu futuro.</p>
+        </div>
+
+        <div class="slide" style="background-image: url('imagenes/banner_tecnologia.jpg');">
+            <h1>Innovación y Tecnología</h1>
+            <p>Laboratorios modernos y herramientas de vanguardia.</p>
+        </div>
+
+    </div>
+
+    <button class="slide-btn" id="prev">❮</button>
+    <button class="slide-btn" id="next">❯</button>
+</section>
+
+<section id="nosotros" class="section">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos una institución dedicada a la formación académica con valores, innovación y visión internacional.</p>
+
+    <img src="imagenes/campus_principal.jpg"
+         class="img-nosotros"
+         alt="Universidad">
+</section>
+
+<section id="carreras" class="section">
+    <h2>Nuestras Carreras Profesionales</h2>
+    
+    <div class="careers-container">
+        
+        <div class="career-card">
+            <h3>Licenciatura en Informática Administrativa</h3>
+            <p>Forma profesionales capaces de optimizar los procesos de una empresa mediante el uso de tecnologías de la información. Combina la gestión empresarial con el desarrollo de sistemas.</p>
+        </div>
+
+        <div class="career-card">
+            <h3>Licenciatura en Contabilidad</h3>
+            <p>Prepara expertos en el manejo de finanzas, auditoría, impuestos y costos. Es esencial para la toma de decisiones económicas y el cumplimiento de obligaciones fiscales de cualquier organización.</p>
+        </div>
+
+        <div class="career-card">
+            <h3>Licenciatura en Derecho</h3>
+            <p>Desarrolla habilidades para interpretar y aplicar el marco legal. El egresado está capacitado para asesorar, representar y defender intereses en diversas áreas jurídicas, como penal, civil o laboral.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="galeria" class="section">
+    <h2>Galería del Campus</h2>
+
+    <div class="gallery">
+
+        
+        
+        <img class="gitem" src="imagenes/galeria_07.jpg">
+        <img class="gitem" src="imagenes/galeria_08.jpg">
+        <img class="gitem" src="imagenes/galeria_09.jpg">
+        <img class="gitem" src="imagenes/galeria_10.jpg">
+        <img class="gitem" src="imagenes/galeria_11.jpg">
+        <img class="gitem" src="imagenes/galeria_12.jpg">
+        <img class="gitem" src="imagenes/galeria_13.jpg">
+        <img class="gitem" src="imagenes/galeria_14.jpg">
+
+    </div>
+</section>
+
+<section id="info" class="section">
+    <h2>Información Académica</h2>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="mision">Misión</button>
+        <button class="tab" data-tab="vision">Visión</button>
+        <button class="tab" data-tab="valores">Valores</button>
+    </div>
+
+    <div class="tab-content active" id="mision">
+        <p>Formar profesionistas competentes con responsabilidad social y espíritu de innovación.</p>
+    </div>
+
+    <div class="tab-content active" id="vision">
+        <p>Ser una de las mejores universidades del país, reconocida por su excelencia académica.</p>
+    </div>
+
+    <div class="tab-content active" id="valores">
+        <p>Honestidad, respeto, compromiso, responsabilidad y liderazgo.</p>
+    </div>
+
+</section>
+
+<section id="contacto" class="section contact">
+    <h2>Contacto</h2>
+
+    <form id="contactForm">
+        <input type="text" id="cname" placeholder="Tu nombre" required>
+        <input type="email" id="cemail" placeholder="Correo electrónico" required>
+        <textarea id="cmsg" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    ©️ <span id="year"></span> Universidad Profesional — Todos los derechos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

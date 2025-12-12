@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f6ff;
+    color: #1a1a1a;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #004a99, #3f7ecb);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-btn {
+    display: none;
+    background: silver;
+    border: none;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* SLIDER */
+.slider-container {
+    position: relative;
+    height: 65vh;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+.slide {
+    min-width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.slide h1 { font-size: 45px; }
+.slide p { font-size: 20px; }
+
+/* BOTONES SLIDER */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#prev { left: 10px; }
+#next { right: 10px; }
+
+/* GALERÍA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.gitem {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.gitem:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px gray;
+}
+
+/* NOSOTROS IMG */
+.img-nosotros {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* TABS */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.tab {
+    background: #b0c4e6;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.tab.active {
+    background: #466bb4;
+    color: white;
+}
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* CONTACTO */
+.contact form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #b0b9c9;
+}
+.contact button {
+    background: #0056b3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background: #003b7a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
